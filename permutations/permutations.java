@@ -16,7 +16,7 @@ class Solution {
             if(!list.contains(nums[i])){
                 list.add(nums[i]);
                 permute(solution,nums,list);
-                list.remove(new Integer(nums[i]));
+                list.remove(list.size()-1);
             }
         }
         return;
